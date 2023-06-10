@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ColoredMessage } from './components/ColoredMessage';
+import { CssModules } from './components/CssModules';
+import { StyledJsx } from './components/StyledJsx';
+import { StyledComponent } from './components/StyledComponent';
+import { Emotion } from './components/Emotion';
 
 export const App = () => {
   console.log('Rendering App');
@@ -21,6 +25,10 @@ export const App = () => {
 
   return (
     <>
+      <CssModules />
+      <StyledJsx />
+      <StyledComponent />
+      <Emotion />
       <h1 style={{ color: 'red' }}>안녕</h1>
       <ColoredMessage color="blue">사랑해요?</ColoredMessage>
       <ColoredMessage color="pink">사랑해요!</ColoredMessage>
