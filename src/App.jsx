@@ -1,3 +1,5 @@
+import { ColoredMessage } from './components/ColoredMessage';
+
 export const App = () => {
   const onClickButton = () => {
     alert();
@@ -6,8 +8,8 @@ export const App = () => {
   return (
     <>
       <h1 style={{ color: 'red' }}>안녕</h1>
-
-      <p style={contentStyle}>사랑해</p>
+      <ColoredMessage color="blue">사랑해요?</ColoredMessage>
+      <ColoredMessage color="pink">사랑해요!</ColoredMessage>
       <button onClick={onClickButton}>버튼</button>
     </>
   );

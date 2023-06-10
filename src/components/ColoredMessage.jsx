@@ -1,8 +1,8 @@
-export const ColoredMessage = (props) => {
+export const ColoredMessage = ({ color, children }) => {
   const contentStyle = {
-    color: 'blue',
+    color,
     fontSize: '20px',
   };
 
-  <p style={contentStyle}>사랑해</p>
+  return <p style={contentStyle}>{children}</p>;
 };
