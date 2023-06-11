@@ -4,6 +4,7 @@ import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
 import { StyledComponent } from './components/StyledComponent';
 import { Emotion } from './components/Emotion';
+import { TailwindCss } from './components/TailwindCss';
 
 export const App = () => {
   console.log('Rendering App');
@@ -25,6 +26,7 @@ export const App = () => {
 
   return (
     <>
+      <TailwindCss />
       <CssModules />
       <StyledJsx />
       <StyledComponent />
