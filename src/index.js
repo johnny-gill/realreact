@@ -1,4 +1,9 @@
 import ReactDOM from 'react-dom/client';
-import { App2 } from './App2';
+import { App3 } from './App3';
+import { AdminFlagProvider } from './components/providers/AdminFlagProvider';
 // import "./index.css"
-ReactDOM.createRoot(document.getElementById('root')).render(<App2 />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <AdminFlagProvider>
+    <App3 />
+  </AdminFlagProvider>
+);
